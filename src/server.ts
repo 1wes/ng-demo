@@ -4,6 +4,7 @@ import express from 'express';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import bootstrap from './main.server';
+import AppServerModule from './main.server';
 
 const serverDistFolder = dirname(fileURLToPath(import.meta.url));
 const browserDistFolder = resolve(serverDistFolder, '../browser');
@@ -31,8 +32,8 @@ app.get(
   '**',
   express.static(browserDistFolder, {
     maxAge: '1y',
-    index: 'index.html'
-  }),
+    index: 'index.html',
+  })
 );
 
 /**
@@ -43,7 +44,7 @@ app.get('**', (req, res, next) => {
 
   commonEngine
     .render({
-      bootstrap,
+      bootstrap: AppServerModule,
       documentFilePath: indexHtml,
       url: `${protocol}://${headers.host}${originalUrl}`,
       publicPath: browserDistFolder,
@@ -64,4 +65,4 @@ if (isMainModule(import.meta.url)) {
   });
 }
 
-export default app;
+export default AppServerModule;
