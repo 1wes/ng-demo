@@ -1,0 +1,49 @@
+{
+  "hash": "c38e788a",
+  "configHash": "6b781983",
+  "lockfileHash": "7d086921",
+  "browserHash": "738dfa5f",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "3d0e3a83",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "e0606965",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "50dc68bb",
+      "needsInterop": false
+    },
+    "@nebular/theme": {
+      "src": "../../../../../../node_modules/@nebular/theme/fesm2022/nebular-theme.mjs",
+      "file": "@nebular_theme.js",
+      "fileHash": "c25e8f24",
+      "needsInterop": false
+    },
+    "@uirouter/angular": {
+      "src": "../../../../../../node_modules/@uirouter/angular/fesm2022/uirouter-angular.mjs",
+      "file": "@uirouter_angular.js",
+      "fileHash": "3a5dc7a9",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-2BV6NN6I": {
+      "file": "chunk-2BV6NN6I.js"
+    },
+    "chunk-CCKAITVG": {
+      "file": "chunk-CCKAITVG.js"
+    },
+    "chunk-6LGESBJB": {
+      "file": "chunk-6LGESBJB.js"
+    }
+  }
+}
